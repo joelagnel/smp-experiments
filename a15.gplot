@@ -1,0 +1,10 @@
+set logscale x 2
+set xrange [5:512]
+set yrange [280000000:360000000]
+set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 7 pi -1 ps 1.5
+set pointintervalbox 1
+set grid
+set format y "%3.1s%c"
+set ylabel "Per-thread counter increments (counts/sec)"
+set xlabel "Per-thread counter memory Separation (bytes)"
+plot "plot-data/a15-plot.dat" with linespoints ls 1
